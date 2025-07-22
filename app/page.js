@@ -5,6 +5,7 @@ import StoryCarousel from "../components/Story";
 import OurPartner from "../components/OurPartner";
 import Footer from "../components/Footer";
 import DonationSection from "../components/Donation";
+import ContactForm from "../components/Contact";
 export default function Home() {
   return (
    <div>
@@ -13,6 +14,7 @@ export default function Home() {
 <About/>
 <StoryCarousel/>
 <OurPartner/>
+<ContactForm/>
 <DonationSection/>
 <Footer/>
    </div>
