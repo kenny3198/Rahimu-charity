@@ -57,7 +57,7 @@ const Footer = () => {
               </Link>
             </div>
             <p className="mt-8 text-sm text-gray-400 text-center md:text-left">
-              © 2024 - 2025 All rights reserved. <Link href="https://www.rahimucharity.org" className="hover:underline">rahimucharity.org</Link>
+              © 2024 - 2025 All rights reserved. <Link href="https://www.rahimucharity.com" className="hover:underline">rahimucharity.org</Link>
             </p>
           </div>
         </div>
