@@ -153,7 +153,10 @@ const OurPartner = () => {
           <p className="md:text-xl text-sm text-amber-900 mb-10 max-w-3xl mx-auto leading-relaxeEvery contribution, big or small, helps us extend our reach and deepen our impact in vulnerable communities across Oko Erin, Kwara, and beyond.">
           <Link
             href="#donate"
-            className="inline-block bg-amber-900 text-white font-bold py-3 px-8 md:py-4 md:px-10 rounded-full md:text-lg text-sm shadow-xl hover:bg-blue-700 hover:scale-105 transition-all duration-300"
+            className="inline-block bg-amber-900 text-white font-bold
+             py-3 px-8 md:py-4 md:px-10 rounded-full md:text-lg text-sm 
+             shadow-xl hover:bg-blue-700 hover:scale-105
+              transition-all duration-300 hover:bg-white hover:text-amber-900"
            
           >
             Support Our Work
