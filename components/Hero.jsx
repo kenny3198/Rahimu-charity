@@ -21,7 +21,7 @@ const Hero = () => {
          className='relative z-10 text-3xl  
           md:text-5xl font-extrabold text-gray-100 mb-2'>
               <div className='flex flex-col gap-3'>
-                 <h1 className='text-4xl text-center mb-3'>Rahimu Association for care and Charity</h1>
+                 <h1 className='md:text-4xl text-3xl text-center mb-3'>Rahimu Association for care and Charity</h1>
                 </div> 
                 <div>
                   <h2 className='text-2xl text-center'>uplifting the most

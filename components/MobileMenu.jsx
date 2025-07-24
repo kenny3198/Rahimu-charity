@@ -8,12 +8,12 @@ const MobileMenu = ({isOpen, onClose}) => {
     <div className='fixed inset-0 bg-black/60 backdrop-blur-sm'  onClick={ onClose }
     />
         {/* Menu contents */}
-        <div className="fixed right-0 top-0 h-full bg-[#1A237E]  w-64 p-6 shadow-xl">
-        <div className="flex flex-col space-y-6 ">
+        <div className="fixed right-0 top-0 h-full bg-[#1A237E] w-45 p-6 shadow-xl">
+        <div className="flex flex-col space-y-6">
           <div className="flex justify-end">
             <button
               onClick={onClose}
-              className="p-2 text-zinc-400 hover:text-white"
+              className="p-2 text-zinc-400 hover:text-white cursor-pointer"
             >
               <svg
                 className="h-6 w-6"

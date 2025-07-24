@@ -59,9 +59,9 @@ const ContactForm = () => {
   return (
     <section id='contact' className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-800 via-indigo-900 to-blue-900 py-12 px-4 sm:px-6 lg:px-8">
       <Toaster position="bottom-center" reverseOrder={false} />
-      <div className="max-w-md w-full flex flex-col space-y-8 bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl shadow-2xl p-8 sm:p-10 border border-white border-opacity-20">
+      <div className="max-w-md w-full flex flex-col md:space-y-8 space-y-6 bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl shadow-2xl p-8 sm:p-10 border border-white border-opacity-20">
         <div>
-          <h2 className="text-center text-3xl font-extrabold text-gray-500">
+          <h2 className="text-center md:text-3xl text-2xl font-extrabold text-gray-500">
             Send Us a Message
           </h2>
           <p className="mt-2 text-center text-sm text-gray-500">

@@ -32,7 +32,7 @@ const About = () => {
                initial={{opacity:0,scale:0.5}}
                      whileInView={{opacity:1,scale:1}}
                      transition={{duration:1.5, delay:0.5}} 
-               className='mt-4'>
+               className='mt-4 text-sm md:text-xl'>
 Rahimu Association for Care and Charity was founded
  by Mr. Rahim in honor of his late father, with a vision
   of uplifting the most vulnerable members of society.

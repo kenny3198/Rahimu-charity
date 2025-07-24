@@ -1,4 +1,3 @@
-// components/Footer.js
 import React from 'react';
 import Link from 'next/link';
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
@@ -46,13 +45,13 @@ const Footer = () => {
           <div className="flex flex-col items-center md:items-start">
             <h3 className="text-xl font-bold mb-4">Connect With Us</h3>
             <div className="flex space-x-4">
-              <Link href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <Link href="https://www.facebook.com/share/15gg7Wip6K/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                 <FaFacebook className="text-3xl text-gray-300 hover:text-white transition-colors duration-300" />
               </Link>
-              <Link href="https://www.x.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+              <Link className='' href="https://x.com/rahimucharity?s=21" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                 <FaTwitter className="text-3xl text-gray-300 hover:text-white transition-colors duration-300" />
               </Link>
-              <Link href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <Link href="https://www.instagram.com/rahimucharity/profilecard/?igsh=MWdtYnkzdTExNWVobw==" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                 <FaInstagram className="text-3xl text-gray-300 hover:text-white transition-colors duration-300" />
               </Link>
             </div>
@@ -67,3 +66,4 @@ const Footer = () => {
 };
 
 export default Footer;
+ 

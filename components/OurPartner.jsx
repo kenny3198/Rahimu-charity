@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 const cardVariants = {
   hidden: { opacity: 0, scale: 0.95 },
@@ -43,10 +44,12 @@ const OurPartner = () => {
   const { mission, vision, team, programs,} = missionVisionProgram;
 
   return (
-    <section id='partner' className="bg-gradient-to-br from-blue-50 to-indigo-50 py-16 md:py-24">
+    <section id='partner' className="bg-gradient-to-br from-blue-50 
+    to-indigo-50 py-16 md:py-24">
       <div className="container mx-auto px-6 max-w-7xl">
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3
+           xl:grid-cols-4 gap-8"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }} // Animate when 30% of component is in view
@@ -57,50 +60,56 @@ const OurPartner = () => {
         >
           {/* Mission Card */}
           <motion.div
-            className="bg-white p-8 rounded-xl shadow-lg border border-blue-100 flex flex-col justify-between"
+            className="bg-white p-8 rounded-xl shadow-lg border 
+            border-blue-100 flex flex-col justify-between"
             variants={cardVariants}
           >
-            <h3 className="text-3xl font-bold text-gray-800 mb-4 flex items-center">
-              <span className="text-4xl mr-3">{mission.icon}</span> {mission.title}
+            <h3 className="md:text-3xl text-sm font-bold
+             text-gray-800 mb-4 flex items-center">
+              <span className="md:text-4xl text-3xl mr-3">{mission.icon}</span> {mission.title}
             </h3>
-            <p className="text-lg text-gray-700 leading-relaxed">{mission.description}</p>
+            <p className="md:text-lg text-sm text-gray-700 leading-relaxed">{mission.description}</p>
           </motion.div>
 
           {/* Vision Card */}
           <motion.div
-            className="bg-white p-8 rounded-xl shadow-lg border border-indigo-100 flex flex-col justify-between"
+            className="bg-white p-8 rounded-xl shadow-lg
+             border border-indigo-100 flex flex-col justify-between"
             variants={cardVariants}
           >
-            <h3 className="text-3xl font-bold text-gray-800 mb-4 flex items-center">
-              <span className="text-4xl mr-3">{vision.icon}</span> {vision.title}
+            <h3 className="md:text-3xl text-sm font-bold
+             text-gray-800 mb-4 flex items-center">
+              <span className="md:text-4xl text-3xl mr-3">{vision.icon}</span> {vision.title}
             </h3>
-            <p className="text-lg text-gray-700 leading-relaxed">{vision.description}</p>
+            <p className="md:text-lg text-sm text-gray-700 leading-relaxed">{vision.description}</p>
           </motion.div>
           {/* Team card */}
            <motion.div
             className="bg-white p-8 rounded-xl shadow-lg border border-indigo-100 flex flex-col justify-between"
             variants={cardVariants}
           >
-            <h3 className="text-3xl font-bold text-gray-800 mb-4 flex items-center">
-              <span className="text-4xl mr-3">{team.icon}</span> {team.title}
+            <h3 className="md:text-3xl text-sm font-bold text-gray-800 mb-4 flex items-center">
+              <span className="md:text-4xl text-3xl mr-3">{team.icon}</span> {team.title}
             </h3>
-            <p className="text-lg text-gray-700 leading-relaxed">{team.description}</p>
+            <p className="md:text-lg text-sm text-gray-700 leading-relaxed">{team.description}</p>
           </motion.div>
 
           {/* Programs Overview */}
           <motion.div
-            className="md:col-span-2 lg:col-span-1 xl:col-span-1 bg-white p-8 rounded-xl shadow-lg border border-green-100 flex flex-col"
+            className="md:col-span-2 lg:col-span-1 xl:col-span-1
+             bg-white p-8 rounded-xl shadow-lg border border-green-100 flex flex-col"
             variants={cardVariants}
           >
-            <h3 className="text-3xl font-bold text-gray-800 mb-6 text-center">Our Programs</h3>
+            <h3 className="md:text-3xl text-2xl  font-bold text-gray-800 
+            mb-6 text-center">Our Programs</h3>
             <div className="space-y-4 flex-grow">
               {/* Display top 3 programs, or adjust slice based on your preference */}
               {programs.slice(0, 3).map((program) => (
                 <div key={program.id} className="flex items-start">
-                  <span className="text-2xl mr-3 flex-shrink-0">{program.icon}</span>
+                  <span className="md:text-2xl text-xl mr-3 flex-shrink-0">{program.icon}</span>
                   <div>
-                    <h4 className="text-xl font-semibold text-gray-800">{program.title}</h4>
-                    <p className="text-md text-gray-600">{program.description}</p>
+                    <h4 className="md:text-xl text-sm font-semibold text-gray-800">{program.title}</h4>
+                    <p className="md:text-md text-sm text-gray-600">{program.description}</p>
                   </div>
                 </div>
               ))}
@@ -115,37 +124,40 @@ const OurPartner = () => {
 
           {/* Partners Overview */}
           <motion.div
-            className="md:col-span-2 lg:col-span-1 xl:col-span-1 bg-white p-8 rounded-xl shadow-lg border border-purple-100 flex flex-col justify-between"
+            className="md:col-span-2 lg:col-span-1 xl:col-span-1 bg-white
+             p-8 rounded-xl shadow-lg border border-purple-100 flex 
+             flex-col justify-between"
             variants={cardVariants}
           >
-            <h3 className="text-3xl font-bold text-gray-800 mb-4 flex items-center">
+            <h3 className="md:text-3xl text-2xl font-bold
+             text-gray-800 mb-4 flex items-center">
               🤝 Our Partners
             </h3>
-            <p className="text-lg text-gray-700 leading-relaxed mb-2 flex-grow">
+            <p className="md:text-lg text-sm text-gray-700 leading-relaxed 
+            mb-2 flex-grow">
               {partnersDescription}
             </p>
-            <a
-              href="/contact" // Link to a page for potential partners or a contact form
+            <Link
+              href="#contact" // Link to a page for potential partners or a contact form
               className="mt-auto inline-block text-blue-600 hover:text-blue-800 font-semibold transition-colors text-lg"
             >
               Learn More about Partnering &rarr;
-            </a>
+            </Link>
           </motion.div>
         </motion.div>
 
         <div className="mt-20 text-center">
-          <h3 className="text-3xl font-extrabold text-gray-800 mb-6">
+          <h3 className="md:text-3xl text-2xl font-extrabold text-gray-800 mb-6">
             Join Our Mission to Create Lasting Impact
           </h3>
-          <p className="text-xl text-gray-700 mb-10 max-w-3xl mx-auto leading-relaxeEvery contribution, big or small, helps us extend our reach and deepen our impact in vulnerable communities across Oko Erin, Kwara, and beyond.">
-          <motion.a
-            href="/donate"
-            className="inline-block bg-blue-600 text-white font-bold py-4 px-10 rounded-full text-lg shadow-xl hover:bg-blue-700 hover:scale-105 transition-all duration-300"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+          <p className="md:text-xl text-sm text-gray-700 mb-10 max-w-3xl mx-auto leading-relaxeEvery contribution, big or small, helps us extend our reach and deepen our impact in vulnerable communities across Oko Erin, Kwara, and beyond.">
+          <Link
+            href="#donate"
+            className="inline-block bg-blue-600 text-white font-bold py-3 px-8 md:py-4 md:px-10 rounded-full md:text-lg text-sm shadow-xl hover:bg-blue-700 hover:scale-105 transition-all duration-300"
+           
           >
             Support Our Work
-          </motion.a>
+          </Link>
           </p>
         </div>
       </div>

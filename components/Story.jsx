@@ -206,7 +206,7 @@ const StoryCarousel = ({ autoPlayInterval = 5000, itemsPerPage = 3 }) => {
                      whileInView={{opacity:1,scale:1}}
                      transition={{duration:1.5, delay:0.5}} 
 
-       className='text-xl text-center font-cursive2 px-2 mt-3 text-amber-900'>The story of Rahimu Association for Care and 
+       className='md:text-xl text-sm text-center font-cursive2 px-2 mt-3 text-amber-900'>The story of Rahimu Association for Care and 
         Charity, established over 21 years ago, began with
          a single act of love and remembrance. Founded by
           Mr. Rahim in honor of his late father, the
