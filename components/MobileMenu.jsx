@@ -8,12 +8,12 @@ const MobileMenu = ({isOpen, onClose}) => {
     <div className='fixed inset-0 bg-black/60 backdrop-blur-sm'  onClick={ onClose }
     />
         {/* Menu contents */}
-        <div className="fixed right-0 top-0 h-full bg-[#1A237E] w-45 p-6 shadow-xl">
+        <div className="fixed right-0 top-0 h-full bg-amber-900 w-45 p-6 shadow-xl">
         <div className="flex flex-col space-y-6">
           <div className="flex justify-end">
             <button
               onClick={onClose}
-              className="p-2 text-zinc-400 hover:text-white cursor-pointer"
+              className="p-2 text-white hover:text-white cursor-pointer"
             >
               <svg
                 className="h-6 w-6"
@@ -32,22 +32,22 @@ const MobileMenu = ({isOpen, onClose}) => {
           </div>
 
           <nav className="flex flex-col space-y-4 ">
-            <Link href="/" onClick={ onClose } className="text-sm text-zinc-400 hover:text-white transition-colors">
+            <Link href="/" onClick={ onClose } className="text-sm text-white hover:text-white transition-colors">
                                  Home
      </Link>
-     <Link href="#about" onClick={ onClose } className="text-sm text-zinc-400 hover:text-white transition-colors">
+     <Link href="#about" onClick={ onClose } className="text-sm text-white hover:text-white transition-colors">
                                  About Us
      </Link>
-        <Link href="#story" onClick={ onClose } className="text-sm text-zinc-400 hover:text-white transition-colors">
+        <Link href="#story" onClick={ onClose } className="text-sm text-white hover:text-white transition-colors">
                                  Our Story
        </Link>
-        <Link href='#partner' onClick={ onClose } className="text-sm text-zinc-400 hover:text-white transition-colors">
+        <Link href='#partner' onClick={ onClose } className="text-sm text-white hover:text-white transition-colors">
                                  Our Partner
     </Link>
-   <Link href='#contact' onClick={ onClose } className="text-sm text-zinc-400 hover:text-white transition-colors">
+   <Link href='#contact' onClick={ onClose } className="text-sm text-white hover:text-white transition-colors">
                                  Contact Us
     </Link>
- <Link href='#donate' onClick={ onClose } className="text-sm text-zinc-400 hover:text-white transition-colors">
+ <Link href='#donate' onClick={ onClose } className="text-sm text-white hover:text-white transition-colors">
                                  Donate
       </Link>
             

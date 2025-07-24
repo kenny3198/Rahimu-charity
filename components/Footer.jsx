@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
-
 const Footer = () => {
   return (
     <footer className="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-12">
@@ -59,7 +58,15 @@ const Footer = () => {
               © 2024 - 2025 All rights reserved. <Link href="https://www.rahimucharity.com" className="hover:underline">rahimucharity.org</Link>
             </p>
           </div>
+          
         </div>
+      </div>
+      <div>
+      
+        
+
+  
+    
       </div>
     </footer>
   );

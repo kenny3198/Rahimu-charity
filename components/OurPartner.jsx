@@ -65,10 +65,10 @@ const OurPartner = () => {
             variants={cardVariants}
           >
             <h3 className="md:text-3xl text-sm font-bold
-             text-gray-800 mb-4 flex items-center">
+             text-amber-900 mb-4 flex items-center">
               <span className="md:text-4xl text-3xl mr-3">{mission.icon}</span> {mission.title}
             </h3>
-            <p className="md:text-lg text-sm text-gray-700 leading-relaxed">{mission.description}</p>
+            <p className="md:text-lg text-sm text-amber-900 leading-relaxed">{mission.description}</p>
           </motion.div>
 
           {/* Vision Card */}
@@ -78,20 +78,20 @@ const OurPartner = () => {
             variants={cardVariants}
           >
             <h3 className="md:text-3xl text-sm font-bold
-             text-gray-800 mb-4 flex items-center">
+             text-amber-900 mb-4 flex items-center">
               <span className="md:text-4xl text-3xl mr-3">{vision.icon}</span> {vision.title}
             </h3>
-            <p className="md:text-lg text-sm text-gray-700 leading-relaxed">{vision.description}</p>
+            <p className="md:text-lg text-sm text-amber-900 leading-relaxed">{vision.description}</p>
           </motion.div>
           {/* Team card */}
            <motion.div
             className="bg-white p-8 rounded-xl shadow-lg border border-indigo-100 flex flex-col justify-between"
             variants={cardVariants}
           >
-            <h3 className="md:text-3xl text-sm font-bold text-gray-800 mb-4 flex items-center">
+            <h3 className="md:text-3xl text-sm font-bold text-amber-900 mb-4 flex items-center">
               <span className="md:text-4xl text-3xl mr-3">{team.icon}</span> {team.title}
             </h3>
-            <p className="md:text-lg text-sm text-gray-700 leading-relaxed">{team.description}</p>
+            <p className="md:text-lg text-sm text-amber-900 leading-relaxed">{team.description}</p>
           </motion.div>
 
           {/* Programs Overview */}
@@ -100,7 +100,7 @@ const OurPartner = () => {
              bg-white p-8 rounded-xl shadow-lg border border-green-100 flex flex-col"
             variants={cardVariants}
           >
-            <h3 className="md:text-3xl text-2xl  font-bold text-gray-800 
+            <h3 className="md:text-3xl text-2xl  font-bold text-amber-900
             mb-6 text-center">Our Programs</h3>
             <div className="space-y-4 flex-grow">
               {/* Display top 3 programs, or adjust slice based on your preference */}
@@ -108,14 +108,14 @@ const OurPartner = () => {
                 <div key={program.id} className="flex items-start">
                   <span className="md:text-2xl text-xl mr-3 flex-shrink-0">{program.icon}</span>
                   <div>
-                    <h4 className="md:text-xl text-sm font-semibold text-gray-800">{program.title}</h4>
-                    <p className="md:text-md text-sm text-gray-600">{program.description}</p>
+                    <h4 className="md:text-xl text-sm font-semibold text-amber-900">{program.title}</h4>
+                    <p className="md:text-md text-sm text-amber-900">{program.description}</p>
                   </div>
                 </div>
               ))}
               {/* Optional: Add a note if there are more programs */}
               {programs.length > 3 && (
-                  <p className="text-md text-gray-600 mt-4">
+                  <p className="text-md text-amber-900 mt-4">
                       And many more initiatives focused on sustainable development.
                   </p>
               )}
@@ -130,10 +130,10 @@ const OurPartner = () => {
             variants={cardVariants}
           >
             <h3 className="md:text-3xl text-2xl font-bold
-             text-gray-800 mb-4 flex items-center">
+             text-amber-900 mb-4 flex items-center">
               🤝 Our Partners
             </h3>
-            <p className="md:text-lg text-sm text-gray-700 leading-relaxed 
+            <p className="md:text-lg text-sm text-amber-900 leading-relaxed 
             mb-2 flex-grow">
               {partnersDescription}
             </p>
@@ -147,13 +147,13 @@ const OurPartner = () => {
         </motion.div>
 
         <div className="mt-20 text-center">
-          <h3 className="md:text-3xl text-2xl font-extrabold text-gray-800 mb-6">
+          <h3 className="md:text-3xl text-2xl font-extrabold text-amber-900 mb-6">
             Join Our Mission to Create Lasting Impact
           </h3>
-          <p className="md:text-xl text-sm text-gray-700 mb-10 max-w-3xl mx-auto leading-relaxeEvery contribution, big or small, helps us extend our reach and deepen our impact in vulnerable communities across Oko Erin, Kwara, and beyond.">
+          <p className="md:text-xl text-sm text-amber-900 mb-10 max-w-3xl mx-auto leading-relaxeEvery contribution, big or small, helps us extend our reach and deepen our impact in vulnerable communities across Oko Erin, Kwara, and beyond.">
           <Link
             href="#donate"
-            className="inline-block bg-blue-600 text-white font-bold py-3 px-8 md:py-4 md:px-10 rounded-full md:text-lg text-sm shadow-xl hover:bg-blue-700 hover:scale-105 transition-all duration-300"
+            className="inline-block bg-amber-900 text-white font-bold py-3 px-8 md:py-4 md:px-10 rounded-full md:text-lg text-sm shadow-xl hover:bg-blue-700 hover:scale-105 transition-all duration-300"
            
           >
             Support Our Work

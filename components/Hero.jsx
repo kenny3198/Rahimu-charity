@@ -4,15 +4,15 @@ import Bg from "../public/assets/rahim-hero.png"
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 const Hero = () => {
-  
+ 
   return (
      <div className="w-full h-screen relative overflow-hidden 
      flex items-center justify-center" >
       <Image 
          src={Bg} alt='image-hero' 
          layout='fill' objectFit='cover'
-     
-         quality={100} priority={true}/>
+          
+         quality={100} priority={true} className='object-cover object-top'/>
 
          <motion.div 
           initial={{opacity:0,scale:0.5}}

@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
       >
         <div className="relative bg-white selection:bg-sky-500/20">
              {/* Gradient Backgrouund */}
-             <div className="fixed inset-0 min-h-screen">
+             <div className="fixed min-h-screen">
               <div className="absolute inset-0 h-full
                bg-[radial-gradient(circle_at_center,
                rgba(56,189,248,0.03), transparent_50%)]"/>

@@ -57,14 +57,20 @@ const ContactForm = () => {
   };
 
   return (
-    <section id='contact' className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-800 via-indigo-900 to-blue-900 py-12 px-4 sm:px-6 lg:px-8">
+    <section id='contact' className="min-h-screen flex items-center
+     justify-center bg-white
+      py-12 px-4 sm:px-6 lg:px-8">
       <Toaster position="bottom-center" reverseOrder={false} />
-      <div className="max-w-md w-full flex flex-col md:space-y-8 space-y-6 bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl shadow-2xl p-8 sm:p-10 border border-white border-opacity-20">
+      <div className="max-w-md w-full flex flex-col md:space-y-8
+       space-y-6 bg-white bg-opacity-10 backdrop-filter 
+       backdrop-blur-lg rounded-xl shadow-2xl p-8 sm:p-10
+        border border-white border-opacity-20">
         <div>
-          <h2 className="text-center md:text-3xl text-2xl font-extrabold text-gray-500">
+          <h2 className="text-center md:text-3xl text-2xl font-extrabold
+           text-amber-900">
             Send Us a Message
           </h2>
-          <p className="mt-2 text-center text-sm text-gray-500">
+          <p className="mt-2 text-center text-sm text-amber-900">
             We'd love to hear from you!
           </p>
         </div>
@@ -126,7 +132,9 @@ const ContactForm = () => {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="group relative w-full flex justify-center
+               py-2 px-4 border border-transparent
+                text-sm font-medium rounded-md text-white bg-amber-900 hover:bg-white hover:text-amber-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {isSubmitting ? (
                 <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">

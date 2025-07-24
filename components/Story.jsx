@@ -133,7 +133,8 @@ const StoryCarousel = ({ autoPlayInterval = 5000, itemsPerPage = 3 }) => {
         <AnimatePresence initial={false} custom={currentIndex}>
           <motion.div
             key={currentIndex}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full px-12 absolute inset-0 place-items-start"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 
+            gap-6 w-full px-12 absolute inset-0 place-items-start"
             variants={slideVariants}
             initial="enter"
             animate="center"
@@ -147,7 +148,9 @@ const StoryCarousel = ({ autoPlayInterval = 5000, itemsPerPage = 3 }) => {
             {getVisibleStories().map((story) => (
               <motion.div
                 key={story.id}
-                className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col h-full transform transition-transform duration-200 hover:scale-[1.03]"
+                className="bg-white rounded-xl shadow-lg overflow-hidden
+                 flex flex-col h-full transform transition-transform 
+                 duration-200 hover:scale-[1.03]"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.1 }}
@@ -163,7 +166,7 @@ const StoryCarousel = ({ autoPlayInterval = 5000, itemsPerPage = 3 }) => {
                   {/* <p className="italic text-gray-700 mb-4
                    leading-relaxed text-base">"{story.quote}"</p> */}
                    <div>
-                          <p className="italic text-gray-700 mb-4
+                          <p className="italic text-amber-900 mb-4
                            leading-relaxed text-base">{story.location}</p>  
                    </div>
                 </div>

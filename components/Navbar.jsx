@@ -9,8 +9,8 @@ const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   return (
     <>
-    <nav className="fixed top-0 left-0 right-0 text-blue-500 border-b border-white/5 
-    backdrop-blur-xl z-50 bg-white "> 
+    <nav className="fixed top-0 left-0 right-0 text-amber-900 border-b border-white/5 
+    backdrop-blur-xl z-50 bg-white"> 
     <div className="mx-auto max-w-7xl px-6">
       <div className="flex h-16 items-center justify-between">
 
@@ -27,27 +27,29 @@ const Navbar = () => {
                   </div>
 
                   <div className="hidden md:flex items-center px-6 space-x-6">
-                    <Link href="/" className="text-sm text-zinc-400 hover:text-blue-500 transition-colors">
+                    <Link href="/" className="text-sm text-amber-900 
+                    hover:text-amber-900 transition-colors">
                       Home
                     </Link>
-                    <Link href="#about" className="text-sm text-zinc-400 hover:text-blue-500 transition-colors">
+                    <Link href="#about" className="text-sm text-zinc-400 hover:text-amber-900 
+                    transition-colors">
                       About Us
                     </Link>
-                    <Link href="#story" className="text-sm text-zinc-400 hover:text-blue-500 transition-colors">
+                    <Link href="#story" className="text-sm text-zinc-400 hover:text-amber-900 transition-colors">
                       Our Story
                     </Link>
-                    <Link href='#partner' className="text-sm text-zinc-400 hover:text-blue-500 transition-colors">
+                    <Link href='#partner' className="text-sm text-zinc-400 hover:text-amber-900 transition-colors">
                       Our Partner
                     </Link>
-                     <Link href='#contact' className="text-sm text-zinc-400 hover:text-blue-500 transition-colors">
+                     <Link href='#contact' className="text-sm text-zinc-400 hover:text-amber-900 transition-colors">
                       Contact Us
                     </Link>
-                     <Link href='#donate' className="text-sm text-zinc-400 hover:text-blue-500 transition-colors">
+                     <Link href='#donate' className="text-sm text-zinc-400 hover:text-amber-900 transition-colors">
                       Donate
                     </Link>
                   </div>   
                     {/* Mobile Menu */}
-                   <button className="md:hidden p-2 text-zinc-400 hover-text-white "
+                   <button className="md:hidden p-2 text-ambe-900 hover-text-white "
                     onClick={() => setIsMobileMenuOpen(true)}>
                   <svg className="h-6 w-6"
                   fill="none"
