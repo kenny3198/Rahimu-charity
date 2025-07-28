@@ -1,15 +1,13 @@
 
-'use client'; 
-
+'use client';
 import React, { useState } from 'react';
 import { toast, Toaster } from 'react-hot-toast'; // For awesome notifications
 
-const GOOGLE_FORM_ACTION_URL = 'https://docs.google.com/forms/d/e/YOUR_FORM_ID/formResponse'; // REPLACE WITH YOUR FORM ID!
-
+const GOOGLE_FORM_ACTION_URL = "https://docs.google.com/forms/d/e/1FAIpQLScupzLUXomaDMQQUqmlkSZDCls5dBRDxEqg2yzvGFrYuqk8dw/viewform?usp=dialog"
 // IMPORTANT: Replace these with the actual entry IDs you extracted from your Google Form's pre-filled link
-const FIELD_NAME_ENTRY_ID = 'entry.123456789'; // Example: entry.123456789 for Name
-const FIELD_EMAIL_ENTRY_ID = 'entry.987654321'; // Example: entry.987654321 for Email
-const FIELD_MESSAGE_ENTRY_ID = 'entry.456789012'; // Example: entry.456789012 for Message
+const FIELD_NAME_ENTRY_ID = 'entry.414148104'; // Example: entry.123456789 for Name
+const FIELD_EMAIL_ENTRY_ID = 'entry.1695533424'; // Example: entry.987654321 for Email
+const FIELD_MESSAGE_ENTRY_ID = 'entry.519992771'; // Example: entry.456789012 for Message
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({

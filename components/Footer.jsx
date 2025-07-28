@@ -1,6 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+// https://docs.google.com/forms/d/e/1FAIpQLScupzLUXomaDMQQUqmlkSZDCls5dBRDxEqg2yzvGFrYuqk8dw/viewform?usp=dialog
+// https://docs.google.com/forms/d/e/1FAIpQLScupzLUXomaDMQQUqmlkSZDCls5dBRDxEqg2yzvGFrYuqk8dw/viewform?usp=pp_url&entry.414148104=Hussain&entry.1695533424=abdulbaqhussain2018@gmail.com&entry.519992771=I+am+the+developer
 const Footer = () => {
   return (
     <footer className="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-12">

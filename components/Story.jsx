@@ -134,7 +134,7 @@ const StoryCarousel = ({ autoPlayInterval = 5000, itemsPerPage = 3 }) => {
           <motion.div
             key={currentIndex}
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 
-            gap-6 w-full px-12 absolute inset-0 place-items-start"
+            gap-6 w-full px-12 absolute inset-0 place-items-center"
             variants={slideVariants}
             initial="enter"
             animate="center"
