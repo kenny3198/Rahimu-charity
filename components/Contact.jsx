@@ -1,13 +1,12 @@
-
 'use client';
 import React, { useState } from 'react';
 import { toast, Toaster } from 'react-hot-toast'; // For awesome notifications
 
-const GOOGLE_FORM_ACTION_URL = "https://docs.google.com/forms/d/e/1FAIpQLScupzLUXomaDMQQUqmlkSZDCls5dBRDxEqg2yzvGFrYuqk8dw/viewform?usp=dialog"
-// IMPORTANT: Replace these with the actual entry IDs you extracted from your Google Form's pre-filled link
-const FIELD_NAME_ENTRY_ID = 'entry.414148104'; // Example: entry.123456789 for Name
-const FIELD_EMAIL_ENTRY_ID = 'entry.1695533424'; // Example: entry.987654321 for Email
-const FIELD_MESSAGE_ENTRY_ID = 'entry.519992771'; // Example: entry.456789012 for Message
+// const GOOGLE_FORM_ACTION_URL = "https://docs.google.com/forms/d/e/1FAIpQLScupzLUXomaDMQQUqmlkSZDCls5dBRDxEqg2yzvGFrYuqk8dw/viewform?usp=dialog"
+// // IMPORTANT: Replace these with the actual entry IDs you extracted from your Google Form's pre-filled link
+// const FIELD_NAME_ENTRY_ID = 'entry.414148104'; // Example: entry.123456789 for Name
+// const FIELD_EMAIL_ENTRY_ID = 'entry.1695533424'; // Example: entry.987654321 for Email
+// const FIELD_MESSAGE_ENTRY_ID = 'entry.519992771'; // Example: entry.456789012 for Message
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -30,22 +29,28 @@ const ContactForm = () => {
     setIsSubmitting(true);
     toast.loading('Sending your message...', { id: 'submitToast' });
 
-    const form = new FormData();
-    form.append(FIELD_NAME_ENTRY_ID, formData.name);
-    form.append(FIELD_EMAIL_ENTRY_ID, formData.email);
-    form.append(FIELD_MESSAGE_ENTRY_ID, formData.message);
+    // const form = new FormData();
+    // form.append(FIELD_NAME_ENTRY_ID, formData.name);
+    // form.append(FIELD_EMAIL_ENTRY_ID, formData.email);
+    // form.append(FIELD_MESSAGE_ENTRY_ID, formData.message);
 
     try {
-      const response = await fetch(GOOGLE_FORM_ACTION_URL, {
+      const response = await fetch('/api/submit', {
         method: 'POST',
-        body: form,
-        mode: 'no-cors', // Important for cross-origin Google Forms submission
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData)
       });
+      const result = await response.json()
 
-      // Google Forms always returns a successful status with 'no-cors' mode,
-      // so we rely on the `fetch` not throwing an error.
+      if (response.ok && result.success) {
       toast.success('Message sent successfully! Thank you.', { id: 'submitToast' });
       setFormData({ name: '', email: '', message: '' }); // Clear form
+      } else {
+          toast.error('Failed to send message. Please try again.', { id: 'submitToast' });
+      }
+     
     } catch (error) {
       console.error('Form submission error:', error);
       toast.error('Failed to send message. Please try again.', { id: 'submitToast' });
