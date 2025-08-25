@@ -32,7 +32,7 @@ export async function POST(request) {
     if (googleFormResponse.status === 200) {
       return NextResponse.json({ success: true, message: "Message sent successfully!" }, { status: 200 });
     } else {
-      console.error('Google Form submission failed with status:', googleFormResponse.status);
+      console.error('Google Form submission faile d with status:', googleFormResponse.status);
       return NextResponse.json({ success: false, message: "Failed to submit to Google Form." }, { status: 500 });
     }
 

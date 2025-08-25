@@ -15,7 +15,7 @@ const Footer = () => {
             <p className="text-gray-300">Espoo, Finland</p>
             <p className="mt-2">
               <Link href="tel:+358451777909" className="hover:underline text-gray-300">
-                Contact: +358451777909
+                Contact: +358465985190
               </Link>
             </p>
             <p>
