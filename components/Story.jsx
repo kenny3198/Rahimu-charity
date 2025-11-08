@@ -9,60 +9,96 @@ import ImageCar6 from "../public/assets/carousel6.png"
 import ImageCar7 from "../public/assets/carousel7.png"
 import ImageCar8 from "../public/assets/carousel8.png"
 import ImageCar9 from "../public/assets/carousel9.png"
+import image10 from "../public/assets/new-rahim1.jpg"
+  import image11 from "../public/assets/new-rahim2.jpg"
+    import image12 from "../public/assets/new-rahim3.jpg"
+     import image13 from "../public/assets/new-rahim4.jpg"
+     import image14 from "../public/assets/new-rahim5.jpg"
+    import image15 from "../public/assets/new-rahim6.jpg"
 
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 
 const stories = [
-  {
+   {
     id: 1,
-    image: ImageCar1, 
+    image: image10, 
+    location: "Kotikylantie 4 F 8502770Espoo Finland"
+  
+  },
+   {
+    id: 2,
+    image: image11, 
+    location: "Kotikylantie 4 F 8502770Espoo Finland"
+  
+  },
+   {
+    id: 3,
+    image: image12, 
+    location: "Kotikylantie 4 F 8502770Espoo Finland"
+  
+  },
+   {
+    id: 4,
+    image: image13, 
+    location: "Kotikylantie 4 F 8502770Espoo Finland"
+  
+  },
+   {
+    id: 5,
+    image: image14, 
     location: "Kotikylantie 4 F 8502770Espoo Finland"
   
   },
   {
-    id: 2,
+    id: 6,
+    image: image15, 
+    location: "Kotikylantie 4 F 8502770Espoo Finland"
+  
+  },
+  {
+    id: 7,
     image: ImageCar2,
     location: "Kotikylantie 4 F 8502770Espoo Finland"
   },
   {
-    id: 3,
+    id: 8,
     image: ImageCar3,
    location: "Kotikylantie 4 F 8502770Espoo Finland"
   },
   {
-    id: 4,
+    id: 9,
     image: ImageCar4,
     location: "P.O.Box KS 16203- Adu Kumasi - Ghana"
     
   },
   {
-    id: 5,
+    id: 10,
     image: ImageCar5,
     location: "P.O.Box KS 16203- Adu Kumasi - Ghana"
     
   },
   {
-    id: 6,
+    id: 11,
     image: ImageCar6,
     location: "P.O.Box KS 16203- Adu Kumasi - Ghana"
     
   },
    {
-    id: 7,
+    id: 12,
     image: ImageCar7,
     location: "P.O.Box KS 16203- Adu Kumasi - Ghana"
     
   },
    {
-    id: 8,
+    id: 13,
     image: ImageCar8,
     location: "P.O.Box KS 16203- Adu Kumasi - Ghana"
     
   },
    {
-    id: 9,
+    id: 14,
     image: ImageCar9,
     location: "P.O.Box KS 16203- Adu Kumasi - Ghana"
     
