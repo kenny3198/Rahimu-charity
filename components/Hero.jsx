@@ -8,6 +8,8 @@ import CarouselImage from './CarouselImage'; // ⬅️ Import the dedicated imag
 // --- CAROUSEL DATA (Using string paths relative to the public directory) ---
 const carouselData = [
     // Ensure all these paths exactly match your files in public/assets/
+    { image: "/assets/charity1.jpg",  title: "Rahimu Association for Care and Charity", subtitle: "Uplifting the most vulnerable members of society."},
+    { image: "/assets/charity2.jpg",  title: "Rahimu Association for Care and Charity", subtitle: "Uplifting the most vulnerable members of society."},
     { image: "/assets/rahim-herobg1.png", title: "Rahimu Association for Care and Charity", subtitle: "Uplifting the most vulnerable members of society." },
     { image: "/assets/rahim-herobg2.png", title: "Empowering Lives Through Community", subtitle: "Bringing hope and support to those in need." },
     { image: "/assets/rahim-herobg3.png", title: "Dedicated to Making a Difference", subtitle: "Working tirelessly for a brighter future." },
