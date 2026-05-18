@@ -11,7 +11,7 @@ const Footer = () => {
           {/* Finland Office */}
           <div>
             <h3 className="text-xl font-bold mb-4">Finland Office</h3>
-            <p className="text-gray-300">Kotikylantie 4 F 8502770</p>
+            <p className="text-gray-300">Kotikyläntie 4 F 85 02770</p>
             <p className="text-gray-300">Espoo, Finland</p>
             <p className="mt-2">
               <Link href="tel:+358451777909" className="hover:underline text-gray-300">
