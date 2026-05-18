@@ -31,8 +31,8 @@ const Footer = () => {
             <p className="text-gray-300">P.O.Box KS 16203- Adum</p>
             <p className="text-gray-300">Kumasi - Ghana</p>
             <p className="mt-2">
-              <Link href="tel:+223257191337" className="hover:underline text-gray-300">
-                Contact: +223257191337.
+              <Link href="tel:+233257191337" className="hover:underline text-gray-300">
+                Contact: +233257191337.
               </Link>
             </p>
             <p>
